@@ -1,0 +1,43 @@
+{
+  "version": "v3.4",
+  "timestamp": "2026-06-03T02:47:00",
+  "rebuildNote": "v3.4: Fixed paths (_inline/ → _knowledge/_enhancement/), updated SKILL.md hash, added F0.5 fact-verify stage, updated sizes. Rebuilt from actual files.",
+  "files": {
+    "SKILL.md": {
+      "size": 21087,
+      "hash": "rebuilt-v3.4"
+    },
+    "_knowledge/_enhancement/plan-template.md": {
+      "size": 5127,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/spawn-patterns.md": {
+      "size": 3017,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/workspace-zones.md": {
+      "size": 1177,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/pitfall-library.md": {
+      "size": 3147,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/knowledge-base-integration.md": {
+      "size": 2216,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/plan-tracker/tracker.md": {
+      "size": 4802,
+      "hash": "rebuilt-v3.4"
+    },
+    "_knowledge/_enhancement/plan-tracker/residual-generator.md": {
+      "size": 5429,
+      "hash": "ok"
+    },
+    "_knowledge/_enhancement/plan-tracker/evolution-log.md": {
+      "size": 3145,
+      "hash": "ok"
+    }
+  }
+}

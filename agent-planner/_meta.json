@@ -1,0 +1,9 @@
+{
+  "slug": "agent-planner",
+  "name": "agent-planner",
+  "description": "Agent 规划修正技能。用于 auditor 的 P-Sub-P 阶段，提供 P1/P2/P3 级规划。",
+  "version": "3.3.0",
+  "source": "self",
+  "registry": "clawhub",
+  "fixed_at": "2026-05-18"
+}

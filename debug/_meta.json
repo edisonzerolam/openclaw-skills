@@ -1,0 +1,9 @@
+{
+  "slug": "debug",
+  "name": "debug",
+  "description": "Trace errors in log files, parse stack traces, detect memory leaks, profile commands, and debug HTTP.",
+  "version": "3.4.0",
+  "source": "self",
+  "registry": "clawhub",
+  "fixed_at": "2026-05-18"
+}

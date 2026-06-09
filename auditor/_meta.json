@@ -1,0 +1,9 @@
+{
+  "slug": "auditor",
+  "name": "auditor",
+  "description": "系统优化审计 + 财务合规审计。Phase-G + Layer0 + S1-S5 + 增强层 A-N。",
+  "version": "6.6.0",
+  "source": "self",
+  "registry": "clawhub",
+  "fixed_at": "2026-05-18"
+}

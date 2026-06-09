@@ -1,0 +1,52 @@
+# Debug Skill Configuration v1.0
+# ===============================
+# 此配置文件由 script.sh 加载，定义各命令的默认值
+# 路径: scripts/config.toml (相对 debug skill 根目录)
+# 格式: 简化 TOML，支持 [section] 和 key = "value"
+# 修改后无需重启，立即生效（每次调用都重新加载）
+
+[defaults]
+# trace 命令默认的错误模式
+pattern = "ERROR|FATAL|Exception|Traceback|WARN|OOM|Segfault|panic|SIGKILL|SIGSEGV"
+# 递归目录搜索的最大深度
+max_depth = 5
+# 单次处理的行数上限（避免内存爆炸）
+max_lines = 100000
+
+[http]
+# HTTP 请求默认超时（秒）
+default_timeout = 10
+# --check 健康检查超时（秒）
+check_timeout = 10
+# 是否跟随重定向
+follow_redirects = true
+# User-Agent 字符串
+user_agent = "debug-skill/3.3.1"
+
+[leaks]
+# 内存监测默认持续时间（秒）
+default_duration = 30
+# 采样间隔（秒）
+default_interval = 5
+# 内存增长 > 此百分比判定为泄漏
+leak_threshold_pct = 20
+# 内存增长 > 此百分比触发警告
+warn_threshold_pct = 5
+
+[profile]
+# 默认重复次数
+default_repeat = 3
+# FAST 阈值（秒）
+fast_threshold_s = 1.0
+
+[selfcheck]
+# 必需依赖
+required_deps = ["bash", "python3", "curl", "grep", "awk", "sed", "wc", "date"]
+# 必需的退出码常量
+expected_excodes = ["EX_OK", "EX_ERR_FOUND", "EX_WARN", "EX_PERM", "EX_TIMEOUT", "EX_CONFIG", "EX_USAGE"]
+# 必需的命令函数
+expected_funcs = ["cmd_trace", "cmd_stacktrace", "cmd_leaks", "cmd_profile", "cmd_diff_logs", "cmd_http", "cmd_selfcheck", "cmd_format"]
+
+[stacktrace]
+# 支持的语言
+languages = ["python", "javascript", "java", "go", "c", "cpp"]
