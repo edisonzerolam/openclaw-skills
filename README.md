@@ -1,18 +1,19 @@
-﻿# OpenClaw Skills
+# OpenClaw Skills
 
 A curated collection of modular, self-contained AI agent skills for the
-[OpenClaw](https://github.com) framework.
-
-🌐 **Language**: **English** (current) | [简体中文](README.zh-CN.md) Each skill extends an AI agent's
+[OpenClaw](https://github.com) framework. Each skill extends an AI agent's
 capabilities with specialized knowledge, workflows, and tool integrations.
 
-> **馃摙 This repository is an index/aggregator.** Each skill is also published as
-> an independent repository for focused use and lighter-weight cloning.
-> Use the links below to access the dedicated repository for each skill.
+> **Note: This repository is an index/aggregator.** Each skill is also
+> published as an independent repository for focused use and lighter-weight
+> cloning. Use the links below to access the dedicated repository for each
+> skill.
+
+Language: **English** (current) | [简体中文](README.zh-CN.md)
 
 ---
 
-## 馃殌 Skills
+## Skills
 
 | Skill | Description | Repo |
 |-------|-------------|------|
@@ -24,7 +25,7 @@ capabilities with specialized knowledge, workflows, and tool integrations.
 
 ---
 
-## 馃摝 Installation
+## Installation
 
 ### Option 1: Install individual skills (recommended)
 
@@ -49,23 +50,23 @@ cp -r openclaw-skills/auditor ~/.openclaw-skills/
 
 ### Option 3: Cherry-pick from this repository
 
-Browse the [skill directories](#-skills) below and copy individual ones.
+Browse the [skill directories](#skills) below and copy individual ones.
 
 ---
 
-## 馃搨 Repository Structure
+## Repository Structure
 
 This repository mirrors all 5 skills under their original directory names:
 
 ```
 openclaw-skills/
-鈹溾攢鈹€ README.md                  鈫?you are here
-鈹溾攢鈹€ LICENSE                    鈫?MIT License (applies to all subdirs)
-鈹溾攢鈹€ agent-planner/             鈫?mirror of edisonzerolam/agent-planner
-鈹溾攢鈹€ auditor/                   鈫?mirror of edisonzerolam/auditor
-鈹溾攢鈹€ debug/                     鈫?mirror of edisonzerolam/debug
-鈹溾攢鈹€ agent-team-orchestration/  鈫?mirror of edisonzerolam/agent-team-orchestration
-鈹斺攢鈹€ qclaw-skill-creator/       鈫?mirror of edisonzerolam/qclaw-skill-creator
+  README.md                  -- you are here
+  LICENSE                    -- MIT License (applies to all subdirs)
+  agent-planner/             -- mirror of edisonzerolam/agent-planner
+  auditor/                   -- mirror of edisonzerolam/auditor
+  debug/                     -- mirror of edisonzerolam/debug
+  agent-team-orchestration/  -- mirror of edisonzerolam/agent-team-orchestration
+  qclaw-skill-creator/       -- mirror of edisonzerolam/qclaw-skill-creator
 ```
 
 > **Note:** The skill subdirectories in this repository are **mirrors** of the
@@ -75,30 +76,30 @@ openclaw-skills/
 
 ---
 
-## 馃幆 Design Principles
+## Design Principles
 
 All skills in this collection follow the same design philosophy:
 
-1. **Modular and self-contained** 鈥?each skill is a drop-in package
-2. **Progressive disclosure** 鈥?`SKILL.md` is the entry point, references/scripts
+1. **Modular and self-contained** -- each skill is a drop-in package
+2. **Progressive disclosure** -- `SKILL.md` is the entry point, references/scripts
    load on demand
-3. **Anthropic 4 hard constraints** 鈥?description is the router, references are
+3. **Anthropic 4 hard constraints** -- description is the router, references are
    layered, deterministic steps use scripts
-4. **Knowledge base separation** 鈥?`_knowledge/` holds the deep reference
+4. **Knowledge base separation** -- `_knowledge/` holds the deep reference
    material, separated from the public-facing skill structure
-5. **MIT licensed** 鈥?free to use, modify, and distribute
+5. **MIT licensed** -- free to use, modify, and distribute
 
 ---
 
-## 馃摐 License
+## License
 
-MIT 鈥?see [LICENSE](LICENSE) for full text.
+MIT -- see [LICENSE](LICENSE) for full text.
 
 Copyright (c) 2026 Edison Zero Lam
 
 ---
 
-## 馃 Contributing
+## Contributing
 
 Issues and improvements should be filed in the **dedicated repository** for the
 relevant skill (see the table above). This aggregator repository is read-only
@@ -106,7 +107,7 @@ mirrors.
 
 ---
 
-## 馃搶 Releases
+## Releases
 
 Each skill follows its own versioning. Latest stable releases:
 
@@ -118,13 +119,12 @@ Each skill follows its own versioning. Latest stable releases:
 
 ---
 
-## 🙋 Note to Chinese Users
+## Note to Chinese Users / 致中国用户
 
-This project is created and published by a Chinese developer. All public repositories
-ship with **English + Simplified Chinese** bilingual READMEs. If you spot any
-translation issue, feel free to open an issue or PR in the dedicated repository.
+This project is created and published by a Chinese developer. All public
+repositories ship with **English + Simplified Chinese** bilingual READMEs.
+If you spot any translation issue, feel free to open an issue or PR in the
+dedicated repository.
 
-## 🙋 致中国用户
-
-本项目由中国开发者创建和发布。所有公开仓库都提供**英文 + 简体中文**双语 README。
-如果你发现任何翻译问题，欢迎在对应独立仓库提 Issue 或 PR。
+本项目由中国开发者创建和发布。所有公开仓库都提供**英文 + 简体中文**双语
+README。如果你发现任何翻译问题，欢迎在对应独立仓库提 Issue 或 PR。
