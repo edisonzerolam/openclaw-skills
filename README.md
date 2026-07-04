@@ -22,6 +22,7 @@ Language: **English** (current) | [简体中文](README.zh-CN.md)
 | **debug** | Log tracing, crash analysis, memory leak detection, HTTP debugging | [edisonzerolam/debug](https://github.com/edisonzerolam/debug) |
 | **agent-team-orchestration** | Multi-agent team coordination, roles, handoffs, quality gates | [edisonzerolam/agent-team-orchestration](https://github.com/edisonzerolam/agent-team-orchestration) |
 | **qclaw-skill-creator** | Toolkit for creating new OpenClaw skills (Anthropic 4 hard constraints) | [edisonzerolam/qclaw-skill-creator](https://github.com/edisonzerolam/qclaw-skill-creator) |
+| **agent-methodology** | P0 core methodology skill — dual-system routing, premortem, Bayesian confidence, feedback loops, fallacy detection | [edisonzerolam/openclaw-skills/tree/main/agent-methodology](https://github.com/edisonzerolam/openclaw-skills/tree/main/agent-methodology) |
 
 ---
 
@@ -56,7 +57,7 @@ Browse the [skill directories](#skills) below and copy individual ones.
 
 ## Repository Structure
 
-This repository mirrors all 5 skills under their original directory names:
+This repository mirrors all 6 skills under their original directory names:
 
 ```
 openclaw-skills/
@@ -67,6 +68,7 @@ openclaw-skills/
   debug/                     -- mirror of edisonzerolam/debug
   agent-team-orchestration/  -- mirror of edisonzerolam/agent-team-orchestration
   qclaw-skill-creator/       -- mirror of edisonzerolam/qclaw-skill-creator
+  agent-methodology/         -- P0 core methodology (dual-system, premortem, Bayesian confidence, fallacy detection)
 ```
 
 > **Note:** The skill subdirectories in this repository are **mirrors** of the

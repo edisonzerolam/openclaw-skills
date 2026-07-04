@@ -19,6 +19,7 @@
 | **debug** | 日志追踪、崩溃分析、内存泄漏检测、HTTP 调试 | [edisonzerolam/debug](https://github.com/edisonzerolam/debug) |
 | **agent-team-orchestration** | 多 agent 团队协作、角色、交接、质量门禁 | [edisonzerolam/agent-team-orchestration](https://github.com/edisonzerolam/agent-team-orchestration) |
 | **qclaw-skill-creator** | 创建新 OpenClaw 技能的工具包（Anthropic 4 条硬约束） | [edisonzerolam/qclaw-skill-creator](https://github.com/edisonzerolam/qclaw-skill-creator) |
+| **agent-methodology** | P0 核心方法论技能 — 双系统分治、预验尸、贝叶斯置信度、反馈循环、谬误检测 | [edisonzerolam/openclaw-skills/tree/main/agent-methodology](https://github.com/edisonzerolam/openclaw-skills/tree/main/agent-methodology) |
 
 ---
 
@@ -53,7 +54,7 @@ cp -r openclaw-skills/auditor ~/.openclaw-skills/
 
 ## 📂 仓库结构
 
-本仓库以原始目录名镜像了全部 5 个技能：
+本仓库以原始目录名镜像了全部 6 个技能：
 
 ```
 openclaw-skills/
@@ -64,7 +65,8 @@ openclaw-skills/
 ├── auditor/                   ← edisonzerolam/auditor 的镜像
 ├── debug/                     ← edisonzerolam/debug 的镜像
 ├── agent-team-orchestration/  ← edisonzerolam/agent-team-orchestration 的镜像
-└── qclaw-skill-creator/       ← edisonzerolam/qclaw-skill-creator 的镜像
+├── qclaw-skill-creator/       ← edisonzerolam/qclaw-skill-creator 的镜像
+└── agent-methodology/         ← P0 核心方法论（双系统分治、预验尸、贝叶斯置信度、谬误检测）
 ```
 
 > **注意：** 本仓库中的技能子目录是上方独立仓库的**镜像**。
