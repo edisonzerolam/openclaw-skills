@@ -252,6 +252,30 @@ print(gc.to_json())
 - 成功一次 → 逐步恢复置信度
 - 避免"一次失败就完全放弃"或"反复重试同一错误"
 
+### 多Agent协调仲裁器
+
+集中式仲裁器，负责路由决策、置信度聚合、冲突仲裁：
+
+```bash
+# 完整编排流程（预验尸→派发→聚合→裁决）
+python scripts/agent_orchestrator.py --task "分析方案A vs B" --mode panel
+
+# 查看编排器状态
+python scripts/agent_orchestrator.py --status
+
+# 聚合多Agent输出（从日志文件）
+python scripts/agent_orchestrator.py --logfile ./agent_outputs.jsonl
+
+# 演示模式
+python scripts/agent_orchestrator.py --demo --complexity L3
+```
+
+核心能力：
+- **双系统路由**：L1/L2 → System 1（单 Agent），L3/L4 → System 2（多 Agent 并行）
+- **全局预验尸**：派发前扫描领域缺失、任务模糊等风险
+- **置信度加权聚合**：按置信度加权平均，高置信度 Agent 更大话语权
+- **分歧检测**：自动识别 Agent 置信度差距 > 0.4 的显著分歧并标注
+
 ### 涌现检测器
 
 监控多 Agent 系统中的异常模式：
